@@ -1,3 +1,7 @@
+library(sf)
+library(gmp)
+library(dplyr)
+library(reshape2)
 day9 <- read.csv("Advent of Code/day9.txt", header=F)
 names(day9) <- c("x", "y")
 day9 <- day9 |> arrange(x, y)
